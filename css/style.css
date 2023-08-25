@@ -1,0 +1,390 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 1 jun. 2023, 19:31:48
+    Author     : sebas, Keylor, Christopher, Kenneth
+*/
+/* Estilos generales */
+/*-------------------------------------------------------------------------------Partes funcionales-----------------------------------------------------------*/
+.logo{/* Parametros del logo*/
+    margin-left: 5px;
+    width: 20%;
+    height: 100px;
+    padding: 20px;
+
+}
+
+.oculto {/*permite ocultar la informacion*/
+    display: none;
+}
+
+.menu {/*parametros basicos del menu*/
+    position: relative;
+    margin-left: 25px;
+    width: 80%;
+    max-width: 250px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);/*da el efecto de sombra*/
+    text-align: left;
+}
+
+.menu ul {/*parametros para la lista del menu*/
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul a {/*mas parametros acerca del color y disposicion*/
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.menu ul a:hover {/*aun más parametros*/
+    color: #0056b3;
+}
+
+.ingresar {/*clase ingresar para el menu de log in*/
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 250px;
+    margin-top: 20px;
+    margin-left: 25px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.ingresar h2 {/*parametros clase log in*/
+    text-align: center;
+    color: #333;
+}
+
+.ingresar form div {/*parametros clase log in*/
+    margin-bottom: 10px;
+}
+
+.ingresar form b {/*parametros clase log in*/
+    display: block;
+    margin-bottom: 5px;
+}
+
+.ingresar form select, .ingresar form input {/*parametros clase log in*/
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.ingresar form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ingresar form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*--------------------------------------------------------------Parte del Menu y su informacion--------------------------------------------------------------*/
+.localizacion {/*clase para el boton localizacion y todos sus parametros*/
+    text-align: center;
+    width: 100%;
+    max-width: 510px;
+    padding: 10px;
+    margin: 10px auto;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    color: #666;
+}
+
+.localizacion h3{/*parametros extra*/
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.caracteristicas {/*clase para el boton de caracteristica y sus ajustes en la pantalla*/
+    width: 80%;
+    max-width: 450px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 60%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.caracteristicas h3 ,h4{/*mas parametros*/
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.caracteristicas p{/*mas parametros*/
+    text-align: center;
+    color: #666;
+}
+
+.instalaciones {/*clase para el boton instalaciones y sus parametros*/
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
+    padding: 10px;
+    margin-left: 120px;
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.instalaciones img {/*imagenes parametros*/
+    width: 90%;
+    max-width: 300px;
+    max-height: 300px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.servicios{/*clase servicios y sus parametros*/
+    width: 80%;
+    max-width: 800px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: auto;
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.servicios h3{/*mas parametros*/
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.servicios p, ol{/*mas parametros*/
+    color: #666;
+    line-height: 1.6;
+}
+
+.informacion{/*Clase informacion y sus parametros*/
+    width: 80%;
+    max-width: 800px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: auto;
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.informacion h3{/*mas parametros*/
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.informacion h4{/*mas parametros*/
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.informacion p, ul{/*mas parametros*/
+    color: #666;
+    line-height: 1.6;
+}
+
+.proyectos {/*clase proyectos para el boton y sus parametros*/
+    width: 80%;
+    max-width: 800px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: auto;
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.proyectos h3 {/*parametros*/
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.proyectos p {/*color de la letra in text*/
+    color: #666;
+    line-height: 1.6;
+}
+
+.proyectos p b {/*resalta más el negro*/
+    color: #333;
+}
+/*estilos para formularios de padre*/
+.registro_padre {
+    width: 80%;
+    max-width: 800px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: auto;
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+
+.registro_padre h2 {
+    text-align: center;
+    color: #333;
+}
+
+.registro_padre form div {
+    margin-bottom: 10px;
+}
+
+.registro_padre form b {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.registro_padre form select,
+.registro_padre form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.registro_padre form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.registro_padre form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/*Estilos para alumnos*/
+
+.registro_alumno {
+    width: 80%;
+    max-width: 800px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: auto;
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+
+.registro_alumno h2 {
+    text-align: center;
+    color: #333;
+}
+
+.registro_alumno form div {
+    margin-bottom: 10px;
+}
+
+.registro_alumno form b {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.registro_alumno form select,
+.registro_alumno form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.registro_alumno form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.registro_alumno form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
